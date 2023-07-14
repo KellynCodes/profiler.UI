@@ -1,4 +1,4 @@
-export class TimeOUt {
+export class TimeOut {
   executeAfterDelay(err: any) {
     setTimeout(() => {
       err = null;
