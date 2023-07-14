@@ -1,0 +1,43 @@
+<div class="card">
+    <h2>Package Details</h2>
+    <div class="tracking_code_view" *ngIf="trackingCode != null">
+        <p>UPLOAD was successful. Copy users tracking code.</p> <span>({{trackingCode}})</span><button class="copy_btn"
+            (click)="copyTrackingCode()">Copy</button>
+    </div>
+    <form (ngSubmit)="uploadProfile()" #ngForm *ngIf="trackingCode == null">
+
+        <div>
+            <label for="sender_img" class="file-input-label">Sender Image URL</label>
+            <input type="text" [(ngModel)]="user.senderImage" name="sender_img" id="sender_img" required="">
+
+            <label for="receiver_img" class="file-input-label">Receiver Image URL</label>
+            <input type="text" [(ngModel)]="user.receiverImage" name="receiver_img" id="receiver_img" required="">
+
+            <label for="sender-name">Sender Name:</label>
+            <input type="text" [(ngModel)]="user.senderName" name="sender_name" id="sender_name" required="">
+
+            <label for="receiver_name">Receiver Name:</label>
+            <input type="text" name="receiver_name" [(ngModel)]="user.receiverName" id="receiver_name" required="">
+
+            <label for="origin">Origin:</label>
+            <input type="text" name="origin" [(ngModel)]="user.origin" id="origin" required="">
+
+            <label for="origin">Receiver Full Address:</label>
+            <input type="text" name="address" maxlength="50" [(ngModel)]="user.address" id="address" required="">
+
+            <label for="email">Email:</label>
+            <input type="text" name="email" [(ngModel)]="user.email" id="email" required="">
+
+            <label for="age">Age:</label>
+            <input type="number" maxlength="200" name="age" [(ngModel)]="user.age" id="age" required="">
+
+            <label for="destination_country">Destination Country:</label>
+            <input type="text" [(ngModel)]="user.destinationCountry" id="destination_country" name="destination_country"
+                required="">
+
+        </div>
+        <button type="submit">UPLOAD</button>
+    </form>
+    <p *ngIf="message != null" class="success_log">{{message}}</p>
+    <p *ngIf="errorMessage != null" class="error_log">{{errorMessage}}</p>
+</div>

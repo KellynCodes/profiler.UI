@@ -1,0 +1,20 @@
+header {
+  background-color: #fff;
+  /* color: #fff; */
+  padding: 20px;
+  border-bottom: 3px solid #f2f2f2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.logo {
+  height: 2.5rem;
+  width: 5rem;
+  object-fit: cover;
+  background-blend-mode: lighten;
+}
+.logo_right {
+  height: 2.5rem;
+  object-fit: cover;
+}

@@ -1,0 +1,75 @@
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f1f1f1;
+  width: 55%;
+  height: 50vh;
+  margin: auto;
+}
+
+.profile > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: fit-content;
+  height: fit-content;
+}
+
+.profile .sender_details,
+.receiver_details {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-left: 1px solid black;
+  padding-left: 1rem;
+}
+
+.profile-picture {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.profile-picture img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-details {
+  margin-left: 20px;
+}
+
+.profile-name {
+  font-size: 24px;
+  margin: 0;
+}
+
+.profile-bio {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.profile-stats {
+  display: flex;
+  margin-top: 10px;
+}
+
+.stat {
+  margin-right: 20px;
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 20px;
+  margin: 0;
+}
+
+.stat-label {
+  font-size: 14px;
+  margin: 5px 0;
+}

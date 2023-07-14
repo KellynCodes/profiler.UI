@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background-color: #f6f6f6;
+}
+
+.error_log {
+  height: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 0.9rem 0.5rem;
+  margin: 1rem auto;
+  background-color: rgba(255, 87, 87, 0.8);
+  color: #ffffff;
+  font-size: 0.99rem;
+  font-weight: bold;
+}
+
+.success_log {
+  height: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 0.5rem 0.5rem;
+  margin: 1rem auto;
+  background-color: rgba(74, 208, 7, 0.722);
+  color: #ffffff;
+  font-size: 0.99rem;
+  font-weight: bold;
+}

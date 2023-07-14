@@ -1,0 +1,44 @@
+<h4 *ngIf="user == null">No user found</h4>
+<div class="profile" *ngIf="user?.data != null">
+    <div class="receiver_detials">
+        <div class="profile-picture">
+            <img [src]="user?.data?.receiverImage" [alt]="user?.data?.receiverName">
+        </div>
+        <div class="profile-details">
+            <h2 class="profile-name">Full Name</h2>
+            <p class="profile-bio">{{user?.data?.receiverName}}</p>
+            <div class="profile-stats">
+                <div class="stat">
+                    <h3 class="stat-label">Country</h3>
+                    <p class="stat-value">{{user?.data?.destinationCountry}}</p>
+                </div>
+                <div class="stat">
+                    <h3 class="stat-label">Email</h3>
+                    <p class="stat-value">{{user?.data?.email}}</p>
+                </div>
+                <div class="stat">
+                    <h3 class="stat-label">Address</h3>
+                    <p class="stat-value">{{user?.data?.address}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sender_details">
+
+        <div class="profile-picture">
+            <img [src]="user?.data?.senderImage" [alt]="user?.data?.senderName">
+            <h5>Sender</h5>
+        </div>
+        <div class="profile-stats">
+            <div class="stat">
+                <h3 class="stat-label">Name</h3>
+                <p class="stat-value">{{user?.data?.senderName}}</p>
+            </div>
+            <div class="stat">
+                <h3 class="stat-label">Sent From:</h3>
+                <p class="stat-value">{{user?.data?.origin}}</p>
+            </div>
+        </div>
+    </div>
+</div>

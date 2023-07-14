@@ -1,0 +1,13 @@
+<main>
+    <section id="tracking">
+        <h2>Track Your Package</h2>
+        <form #ngForm>
+            <div>
+                <input type="text" max-length="100" [(ngModel)]="accessCode" name="accessCode" required
+                    placeholder="Enter Tracking Number">
+                <button type="submit" (click)="submit()">Track</button>
+            </div>
+            <p *ngIf="error != null" class="error_log">{{error.message}}</p>
+        </form>
+    </section>
+</main>

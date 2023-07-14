@@ -1,0 +1,110 @@
+.card {
+  width: 50%;
+  margin: 20px auto;
+  padding: 1rem;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.99rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+form {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.tracking_code_view {
+  width: 100%;
+  height: fit-content;
+  margin: auto;
+  background-color: #05a0055d;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 8px;
+  border: 1.4px solid #00b000;
+}
+
+.tracking_code_view > p {
+  color: #298200;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-right: 0.3rem;
+}
+
+.tracking_code_view > span {
+  color: #fff7f7;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-left: 3px;
+}
+
+.copy_btn {
+  width: auto;
+  height: auto;
+  text-align: center;
+  border: 1.5px solid #0f0e0d;
+  border-radius: 5px;
+  padding: 0.5rem;
+  background-color: #f7fbf7;
+  color: #e85b10;
+  cursor: pointer;
+}
+
+form > div {
+  width: 70%;
+  height: fit-content;
+  margin: auto;
+}
+
+h2 {
+  margin-top: 0;
+  color: #020202;
+  font-size: 1rem;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #020202;
+  font-size: 14px;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  color: #020202;
+}
+
+button[type="submit"] {
+  background-color: #ff4500;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 50%;
+  height: 2.3rem;
+  margin: 1rem auto;
+}
+
+button[type="submit"]:hover {
+  background-color: #ff2a1a;
+}
+
+.card div p {
+  margin-bottom: 5px;
+}
